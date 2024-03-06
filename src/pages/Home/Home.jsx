@@ -19,20 +19,16 @@ function Home() {
         </p>
       </div>
 
-      {/* ----------------our services--------------- */}
-      {/* <Services></Services> */}
-
       <div>
-          <OurServices></OurServices>
-        </div>
+        <OurServices></OurServices>
+      </div>
 
-       {/* about us section */}
       <div className="about-company">
         <div className="vector-grp">
           <img src={vector1} alt="" />
           <img src={vector2} alt="" />
         </div>
-       
+
         <div className="abt-com-flex">
           <div>
             <p>About Us</p>

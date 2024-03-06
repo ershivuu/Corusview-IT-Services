@@ -11,10 +11,9 @@
 .accordion-button p {
   margin-left: 55%;
   font-size: 25px;
-  
 }
-.accordion-button img{
-    width: 60px;
+.accordion-button img {
+  width: 60px;
 }
 .accordion-item {
   background-color: white !important;

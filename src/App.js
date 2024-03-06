@@ -10,6 +10,7 @@ import Contact from "./pages/Contact/Contact";
 import Nav from "./components/Headers/Nav";
 import Techno from "./pages/Softwaredev/Techno";
 import Test from "./pages/Test/Test";
+import Products from "./pages/Products/Products";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="contact" element={<Contact />}></Route>
         <Route path="services" element={<Techno />}></Route>
         <Route path="test" element={<Test />}></Route>
+        <Route path="our-products" element={<Products />}></Route>
         <Route path="test" element={<Test />}></Route>
         
       </Routes>
