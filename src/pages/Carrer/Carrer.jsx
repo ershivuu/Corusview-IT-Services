@@ -1,5 +1,6 @@
 import React from "react";
 import "./Carrer.css";
+import shivu from "../../assets/images/shivam.jpg";
 
 function Carrer() {
   return (
@@ -16,7 +17,20 @@ function Carrer() {
           services.
         </p>
       </div>
-
+      <div className="gallery">
+        <div className="imgs">
+          <img src={shivu} />
+        </div>
+        <div className="imgs img-to-btm">
+          <img src={shivu} />
+        </div>
+        <div className="imgs">
+          <img src={shivu} />
+        </div>
+        <div className="imgs img-to-btm">
+          <img src={shivu} />
+        </div>
+      </div>
       <div className="environment">
         <div className="env-heading">
           <p>What You See, What You Get</p>
