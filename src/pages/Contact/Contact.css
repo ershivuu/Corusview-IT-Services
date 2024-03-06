@@ -1,7 +1,12 @@
 .contact-flex-box {
   margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   gap: 30px;
 }
@@ -63,6 +68,18 @@
 .contact-form input:focus {
   outline: none;
   border-bottom: 3px solid var(--sub-heading);
+  color: var(--sub-heading);
+}
+.contact-form input::-webkit-input-placeholder {
+  color: var(--sub-heading);
+}
+.contact-form input::-moz-placeholder {
+  color: var(--sub-heading);
+}
+.contact-form input:-ms-input-placeholder {
+  color: var(--sub-heading);
+}
+.contact-form input::-ms-input-placeholder {
   color: var(--sub-heading);
 }
 .contact-form input::placeholder {

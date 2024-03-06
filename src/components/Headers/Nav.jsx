@@ -33,14 +33,24 @@ function Nav() {
                     </Link>
                   </li>
                   <li>
-                    <Link to="/" className="navigations">
+                    <Link to="/services" className="navigations">
                       Services
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/carrer" className="navigations">
+                      Carrer
                     </Link>
                   </li>
 
                   <li>
-                    <Link to="/about" className="navigations">
+                    <Link to="/contact" className="navigations">
                       Contact
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/contact" className="navigations">
+                      Products
                     </Link>
                   </li>
                 </ul>

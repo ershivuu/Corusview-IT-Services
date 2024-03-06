@@ -1,10 +1,13 @@
 import React from "react";
 import "./Carrer.css";
 import shivu from "../../assets/images/shivam.jpg";
+import Nav from "../../components/Headers/Nav";
+import Footers from "../../components/Footers/Footers";
 
 function Carrer() {
   return (
     <>
+      <Nav></Nav>
       <div className="carrer-heading">
         <p>Exploring exciting career opportunities in it innovation </p>
         <p>
@@ -119,7 +122,7 @@ function Carrer() {
 
       <div className="join-us">
         <p>
-          Want to join us? <br /> Raise your hand.{" "}
+          Want to join us? <br /> Raise your hand.
         </p>
         <p>
           We're a team of innovators, collaborators, and problem-solvers,
@@ -131,6 +134,7 @@ function Carrer() {
           <a href="">Go Ahead &#8594;</a>
         </button>
       </div>
+      <Footers></Footers>
     </>
   );
 }

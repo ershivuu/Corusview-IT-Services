@@ -6,9 +6,12 @@
   text-transform: uppercase;
   max-width: 1440px;
   margin: auto;
+  line-height: 1;
 }
 .home-heading span {
   color: #5d8c87;
+  -webkit-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
 }
 .home-heading span:hover {
@@ -37,10 +40,17 @@
 }
 
 .abt-com-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   gap: 50px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   line-height: 1;
 }
@@ -85,10 +95,17 @@
 }
 .recent-flex {
   margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   gap: 50px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .recent-flex div {
@@ -107,17 +124,17 @@
 }
 @media screen and (max-width: 320px) {
   /* Styles for smaller smartphones */
+  /* Styles for larger smartphones */
   .home-heading {
+    line-height: 1.5;
     font-size: 30px;
   }
   .vector-grp {
     display: none;
   }
-  .about-company {
-    background: none;
-  }
+
   .abt-com-flex div:first-child p {
-    font-size: 30px;
+    font-size: 40px;
   }
   .abt-com-flex {
     gap: 10px;
@@ -132,6 +149,9 @@
     max-width: 285px;
     width: 285px;
     height: 380px;
+  }
+  .abt-com-flex div:first-child p {
+    font-size: 30px;
   }
 }
 
@@ -162,6 +182,12 @@
     width: 285px;
     height: 380px;
   }
+  .abt-com-flex div:first-child p {
+    font-size: 30px;
+  }
+  .recent-works-heading p:nth-child(1) {
+    font-size: 30px;
+  }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -176,10 +202,11 @@
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   /* Styles for small desktops and tablets in landscape */
+  .recent-flex {
+    gap: 100px;
+  }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
   /* Styles for larger desktops and laptops */
 }
-
-/* Additional media queries for larger screens can be added if needed */
