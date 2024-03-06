@@ -4,10 +4,13 @@ import email from "../../assets/logos/color-logo/email.png";
 import phone from "../../assets/logos/color-logo/phone.png";
 import location from "../../assets/logos/color-logo/location.png";
 import message from "../../assets/logos/message.png";
+import Nav from "../../components/Headers/Nav";
+import Footers from "../../components/Footers/Footers";
 
 function Contact() {
   return (
     <>
+      <Nav></Nav>
       <div className="contact-flex-box">
         <div className="contact-card contact-card-1">
           <div>
@@ -48,6 +51,7 @@ function Contact() {
           <img src={location} alt="" />
         </div> */}
       </div>
+      <Footers></Footers>
     </>
   );
 }

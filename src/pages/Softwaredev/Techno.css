@@ -25,9 +25,16 @@
 }
 .flex-header {
   margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   font-size: 30px;
   font-family: "Poppins", sans-serif;
@@ -47,6 +54,8 @@
   font-family: "Playfair Display", serif;
 }
 .proble-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 30px;
   background-color: #f3f9f9;
@@ -111,7 +120,13 @@
   margin: auto;
   line-height: 1;
 }
-
+.dot {
+  width: 20px;
+  height: 20px;
+  background-color: var(--heading-color);
+  border-radius: 50%;
+  margin-left: -20%;
+}
 @media screen and (max-width: 320px) {
   /* Styles for smaller smartphones */
   .page-heading p:first-child {
@@ -122,6 +137,9 @@
   }
   .dev-process p {
     font-size: 30px;
+  }
+  .dot {
+    display: none;
   }
 }
 
@@ -136,10 +154,16 @@
   .dev-process p {
     font-size: 30px;
   }
+  .dot {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
   /* Styles for tablets */
+  .dot {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {

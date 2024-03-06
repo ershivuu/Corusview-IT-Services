@@ -1,5 +1,9 @@
 .accordion-header {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
   display: flex !important;
+  -webkit-box-pack: justify !important;
+  -ms-flex-pack: justify !important;
   justify-content: space-between !important;
 }
 .accordion-header button {
@@ -24,13 +28,29 @@
   background-color: orchid;
   margin: auto;
   cursor: pointer;
+  -webkit-animation: layoff 1s infinite ease-in-out;
   animation: layoff 1s infinite ease-in-out;
 }
-@keyframes layoff {
+@-webkit-keyframes layoff {
   0% {
+    -webkit-transform: rotateX(0deg);
     transform: rotateX(0deg);
   }
   50% {
+    -webkit-transform: rotateX(50deg);
+    transform: rotateX(50deg);
+  }
+  /* 100% {
+    transform: rotateX(80deg);
+  } */
+}
+@keyframes layoff {
+  0% {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+  }
+  50% {
+    -webkit-transform: rotateX(50deg);
     transform: rotateX(50deg);
   }
   /* 100% {

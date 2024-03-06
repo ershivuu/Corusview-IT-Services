@@ -5,6 +5,8 @@ import Solutions from "./Solutions";
 import vectorgrp1 from "../../assets/images/vectorgrp-1.png";
 import devprocess from "../../assets/images/dev-process.png";
 import Tools from "./Tools";
+import Nav from "../../components/Headers/Nav";
+import Footers from "../../components/Footers/Footers";
 
 function Techno() {
   const [selectedComponent, setSelectedComponent] = useState();
@@ -26,6 +28,7 @@ function Techno() {
   }
   return (
     <>
+      <Nav></Nav>
       <div>
         <div className="page-heading">
           <p>Unlock software magic with us</p>
@@ -40,9 +43,11 @@ function Techno() {
           <div>
             <a onClick={() => showComponent("Component1")}>Problems</a>
           </div>
+          <div className="dot"></div>
           <div>
             <a onClick={() => showComponent("Component2")}>Solutions</a>
           </div>
+          <div className="dot"></div>
         </div>
         <div>{componentToShow}</div>
       </div>
@@ -68,6 +73,8 @@ function Techno() {
         <img src={devprocess} />
       </div>
       <Tools></Tools>
+
+      <Footers></Footers>
     </>
   );
 }

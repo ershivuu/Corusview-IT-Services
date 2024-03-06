@@ -1,15 +1,15 @@
 import React from "react";
 import "./About.css";
+import Nav from "../../components/Headers/Nav";
+import Footers from "../../components/Footers/Footers";
 
 function About() {
   return (
     <>
+      <Nav></Nav>
       <div>
         <div className="about-page-heading">
-          <p>
-            about <br />
-            us
-          </p>
+          <p>about us</p>
         </div>
 
         <div className="about-us">
@@ -132,6 +132,7 @@ function About() {
           </button>
         </div>
       </div>
+      <Footers></Footers>
     </>
   );
 }

@@ -5,10 +5,13 @@ import Customer from "./Customers/Customer";
 import vector1 from "../../assets/images/vector.png";
 import vector2 from "../../assets/images/vector2.png";
 import OurServices from "./OurServices/OurServices";
+import Nav from "../../components/Headers/Nav";
+import Footers from "../../components/Footers/Footers";
 
 function Home() {
   return (
     <>
+      <Nav></Nav>
       <div className="home-heading">
         <p>
           <span>5+ Years of Experience in IT Field</span> Where Innovation Meets
@@ -65,6 +68,7 @@ function Home() {
           <div className="small-box"></div>
         </div>
       </div>
+      <Footers></Footers>
     </>
   );
 }

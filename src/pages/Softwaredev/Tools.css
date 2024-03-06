@@ -1,4 +1,5 @@
 .tools {
+  background: -o-linear-gradient(213.88deg, #e29578 -2.06%, #83c5be 94.65%);
   background: linear-gradient(236.12deg, #e29578 -2.06%, #83c5be 94.65%);
   padding-block: 40px;
 }
@@ -52,8 +53,12 @@
   margin-bottom: 20px;
 }
 .pc-view-flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 30px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 .pc-view-flex-box img {

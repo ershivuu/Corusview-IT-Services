@@ -14,18 +14,18 @@ import Test from "./pages/Test/Test";
 function App() {
   return (
     <Main>
-      <Nav></Nav>
+      {/* <Nav></Nav> */}
       <Routes>
         <Route exact path="/" element={<Home />}></Route>
         <Route path="about" element={<About />}></Route>
         <Route path="carrer" element={<Carrer />}></Route>
         <Route path="contact" element={<Contact />}></Route>
-        <Route path="techno" element={<Techno />}></Route>
+        <Route path="services" element={<Techno />}></Route>
         <Route path="test" element={<Test />}></Route>
         <Route path="test" element={<Test />}></Route>
         
       </Routes>
-      <Footers></Footers>
+      {/* <Footers></Footers> */}
     </Main>
   );
 }

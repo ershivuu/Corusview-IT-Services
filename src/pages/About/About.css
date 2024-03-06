@@ -1,17 +1,22 @@
 .about-page-heading {
   text-align: center;
-  /* font-size: var(--heading-size); */
   font-size: 90px;
   text-transform: uppercase;
   color: var(--heading-color);
   font-family: "Playfair Display", serif;
   font-weight: 700;
   line-height: 1;
+  margin-top: 5%;
 }
 
 .about-us-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   gap: 10px;
 }
@@ -50,8 +55,13 @@
   font-weight: 700;
 }
 .our-values-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   gap: 10px;
 }
@@ -63,8 +73,12 @@
   overflow: hidden;
 }
 .sub-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
 }
 .sub-card div:nth-child(2) {
@@ -120,6 +134,10 @@
   .value-content {
     margin-top: 10px;
   }
+  .about-page-heading,
+  .our-values-heading p {
+    font-size: 30px;
+  }
 }
 
 @media screen and (min-width: 321px) and (max-width: 480px) {
@@ -133,6 +151,10 @@
   }
   .value-content {
     margin-top: 10px;
+  }
+  .about-page-heading,
+  .our-values-heading p {
+    font-size: 30px;
   }
 }
 
