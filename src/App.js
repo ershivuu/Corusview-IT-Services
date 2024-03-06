@@ -22,8 +22,10 @@ function App() {
         <Route path="contact" element={<Contact />}></Route>
         <Route path="techno" element={<Techno />}></Route>
         <Route path="test" element={<Test />}></Route>
+        <Route path="test" element={<Test />}></Route>
+        
       </Routes>
-      <Footers></Footers>
+      {/* <Footers></Footers> */}
     </Main>
   );
 }

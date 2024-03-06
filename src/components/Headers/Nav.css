@@ -1,4 +1,34 @@
 .header-body {
   background-color: var(--header-bg-color);
   height: 150px;
+  display: flex;
+  align-items: center;
+}
+
+.header-child {
+  background-color: #f3f9e9;
+  height: 70px;
+  width: 884px;
+  max-width: 884px;
+  margin: auto;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo {
+  height: 30px;
+  width: 200px;
+  margin: 20px;
+}
+summary {
+  float: right;
+}
+details div{
+  background-color: green;
+}
+.hamburger{
+  width: 18px;
+  height: 15px;
+  margin: 28px;
 }

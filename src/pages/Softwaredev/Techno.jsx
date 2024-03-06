@@ -62,6 +62,7 @@ function Techno() {
           <img src={vectorgrp1} alt="" />
         </div>
       </div>
+
       <div className="dev-process">
         <p>Our Software Development Process</p>
         <img src={devprocess} />
