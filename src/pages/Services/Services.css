@@ -1,0 +1,39 @@
+.accordion-header {
+  display: flex !important;
+  justify-content: space-between !important;
+}
+.accordion-header button {
+  /* max-width: fit-content; */
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+}
+
+.services-logo img {
+  width: 25px;
+  height: 25px;
+}
+/* .our-services {
+  width: 80%;
+  margin: auto;
+} */
+
+.our-services {
+  width: 50%;
+  height: 300px;
+  background-color: orchid;
+  margin: auto;
+  cursor: pointer;
+  animation: layoff 1s infinite ease-in-out;
+}
+@keyframes layoff {
+  0% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(50deg);
+  }
+  /* 100% {
+    transform: rotateX(80deg);
+  } */
+}

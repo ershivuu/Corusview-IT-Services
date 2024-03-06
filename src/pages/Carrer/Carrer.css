@@ -1,0 +1,126 @@
+.carrer-heading p:nth-child(1) {
+  font-size: 90px;
+  text-transform: uppercase;
+  color: var(--heading-color);
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  line-height: 1;
+}
+.carrer-heading p:nth-child(2) {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+}
+.carrer-heading {
+  width: 90%;
+  max-width: 1440px;
+  margin: auto;
+}
+.env-heading {
+  font-size: 72px;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  color: var(--heading-color);
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 100px;
+}
+.env-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 30px;
+}
+.env-card {
+  width: 400px;
+  padding: 5px;
+}
+.env-card p:nth-child(1) {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+.env-card p:nth-child(2) {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+.join-us {
+  width: 90%;
+  margin: auto;
+  max-width: 1440px;
+}
+.join-us p:nth-child(1) {
+  font-size: 72px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  color: var(--heading-color);
+  line-height: 1;
+}
+.join-us p:nth-child(2) {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  width: 80%;
+}
+.join-us button {
+  border: 1px solid var(--sub-heading);
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+  font-size: 20px;
+}
+.join-us button a {
+  text-decoration: none;
+  color: var(--sub-heading);
+}
+@media screen and (max-width: 320px) {
+  /* Styles for smaller smartphones */
+  .carrer-heading p:nth-child(1) {
+    font-size: 30px;
+  }
+  .env-heading {
+    font-size: 30px;
+  }
+  .env-card {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  /* Styles for larger smartphones */
+  .carrer-heading p:nth-child(1) {
+    font-size: 30px;
+  }
+  .env-heading {
+    font-size: 30px;
+  }
+  .env-card {
+    text-align: center;
+  }
+  .join-us p:nth-child(1) {
+    font-size: 40px;
+    text-align: center;
+  }
+  .join-us p:nth-child(2) {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .carrer-heading p:nth-child(1) {
+    font-size: 30px;
+  }
+  .env-heading {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Styles for small desktops and tablets in landscape */
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  /* Styles for larger desktops and laptops */
+}

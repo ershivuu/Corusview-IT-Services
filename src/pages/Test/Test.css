@@ -1,0 +1,71 @@
+.our-customers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1440px;
+  margin: auto;
+  align-items: center;
+}
+.custom-crousol {
+  max-width: 526px;
+  min-height: 375px;
+  background: url("../../assets/images/slider-bg.png");
+  background-size: cover;
+  background-position: center;
+  padding: 30px 50px 30px 50px;
+}
+.carousel-item {
+  text-align: center;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  padding-top: 50px;
+}
+
+.about-client img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.client-details p:nth-child(1) {
+  color: black;
+  font-weight: 700;
+}
+.client-details p:nth-child(2) {
+  font-weight: 400;
+}
+.custom-btn {
+  margin-top: 100px;
+}
+.custom-heading p {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1;
+}
+@media screen and (max-width: 320px) {
+  /* Styles for smaller smartphones */
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  .custom-crousol {
+    padding: 30px 10px 30px 10px;
+  }
+  .custom-heading p {
+    text-align: center;
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  /* Styles for tablets */
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Styles for small desktops and tablets in landscape */
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  /* Styles for larger desktops and laptops */
+}

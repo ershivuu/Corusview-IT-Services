@@ -1,0 +1,151 @@
+.page-heading p:first-child {
+  font-size: 90px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  color: var(--heading-color);
+  text-transform: uppercase;
+  line-height: 1;
+}
+.page-heading {
+  max-width: 996px;
+  text-align: center;
+  margin: auto;
+}
+.page-heading p:nth-child(2) {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+.sub-header {
+  margin: auto;
+  max-width: 1218px;
+  height: 100px;
+  background-color: #d9edeb;
+  border-radius: 100px;
+}
+.flex-header {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+}
+.sub-header div {
+  cursor: pointer;
+}
+.problem-body,
+.solution-body {
+  margin: auto;
+  max-width: 1040px;
+  margin-top: 50px;
+}
+.problem-body div:first-child p {
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Playfair Display", serif;
+}
+.proble-cards {
+  display: flex;
+  gap: 30px;
+  background-color: #f3f9f9;
+  border: 1px solid #d6d6d6;
+  border-radius: 15px;
+  padding: 30px;
+  margin-block: 20px;
+}
+.cross-btn img {
+  margin-top: 50px;
+  width: 30px;
+  height: 30px;
+}
+.probs p:nth-child(1) {
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+}
+.probs p:nth-child(2) {
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+.services {
+  background-color: #375350;
+  width: 100%;
+  color: white;
+  padding-block: 50px;
+  position: relative;
+}
+.services p {
+  font-size: 48px;
+  font-weight: 400;
+  font-family: "Playfair Display", serif;
+}
+.sub-services {
+  max-width: 1040px;
+  margin: auto;
+}
+.services li {
+  font-weight: 400;
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+}
+.services-vector {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.services-vector img {
+  height: 392px;
+}
+.dev-process img {
+  width: 100%;
+}
+.dev-process {
+  text-align: center;
+  font-size: 60px;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  max-width: 1440px !important;
+  margin: auto;
+  line-height: 1;
+}
+
+@media screen and (max-width: 320px) {
+  /* Styles for smaller smartphones */
+  .page-heading p:first-child {
+    font-size: 30px;
+  }
+  .services-vector {
+    display: none;
+  }
+  .dev-process p {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  /* Styles for larger smartphones */
+  .page-heading p:first-child {
+    font-size: 30px;
+  }
+  .services-vector {
+    display: none;
+  }
+  .dev-process p {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  /* Styles for tablets */
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Styles for small desktops and tablets in landscape */
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  /* Styles for larger desktops and laptops */
+}
