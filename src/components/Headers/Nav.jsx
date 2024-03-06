@@ -1,4 +1,5 @@
 import React from "react";
+import { Outlet, Link } from "react-router-dom";
 import "./Nav.css";
 import logo from "../../assets/logos/corusview-logo (1).png";
 import hamburger from "../../assets/logos/hamburger.png";
@@ -22,19 +23,25 @@ function Nav() {
                 </button>
                 <ul className="dropdown-menu">
                   <li>
-                    <a className="dropdown-item" href="#">
-                      Action
-                    </a>
+                    <Link to="/" className="navigations">
+                      Home
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
-                      Another action
-                    </a>
+                    <Link to="/about" className="navigations">
+                      About Us
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
-                      Something else here
-                    </a>
+                    <Link to="/" className="navigations">
+                      Services
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link to="/about" className="navigations">
+                      Contact
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -42,6 +49,7 @@ function Nav() {
           </div>
         </div>
       </div>
+      <Outlet />
     </>
   );
 }
