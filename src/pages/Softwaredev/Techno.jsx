@@ -64,7 +64,7 @@ function Techno() {
       </div>
 
       <div className="dev-process">
-        <p>Our Software Development Process</p>
+        <p>Our Software Development Processssss</p>
         <img src={devprocess} />
       </div>
       <Tools></Tools>
