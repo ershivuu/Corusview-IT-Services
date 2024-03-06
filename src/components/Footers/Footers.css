@@ -53,3 +53,27 @@
   width: 25px;
   height: 25px;
 }
+
+/* For small devices (phones, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .flex-footer {
+    flex-direction: column;
+  }
+  .info {
+    margin-top: 20px;
+  }
+}
+.set-footer{
+  text-align: center;
+}
+
+
+/* For medium devices (tablets, 992px and up) */
+@media only screen and (min-width: 768px) {
+  .footer-1 {
+    padding: 20px;
+  }
+  .footer-2 {
+    padding: 10px;
+  }
+}

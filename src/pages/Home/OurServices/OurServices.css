@@ -1,0 +1,64 @@
+.services-heading {
+  font-size: 50px;
+  font-weight: 700;
+  font-family: "Playfair Display";
+  color: #04020f;
+}
+
+.services-sections img {
+  width: 60px;
+}
+.accordion-button p {
+  margin-left: 55%;
+  font-size: 25px;
+  
+}
+.accordion-button img{
+    width: 60px;
+}
+.accordion-item {
+  background-color: white !important;
+  border: none;
+}
+.accordion-button {
+  background-color: white !important;
+  border-bottom: 1px solid black;
+}
+.accordion-button::after {
+  flex-shrink: 0;
+  width: var(--bs-accordion-btn-icon-width);
+  height: var(--bs-accordion-btn-icon-width);
+  margin-left: auto;
+  content: "";
+  background-image: url("../../../assets/logos/Icon.png") !important;
+  background-repeat: no-repeat;
+  background-size: var(--bs-accordion-btn-icon-width);
+  transition: var(--bs-accordion-btn-icon-transition);
+}
+@media screen and (max-width: 320px) {
+  /* Styles for smaller smartphones */
+  .accordion-button p {
+    margin-left: 8%;
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  /* Styles for larger smartphones */
+  .accordion-button p {
+    margin-left: 8%;
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  /* Styles for tablets */
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Styles for small desktops and tablets in landscape */
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  /* Styles for larger desktops and laptops */
+}

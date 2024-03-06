@@ -4,6 +4,7 @@ import Services from "../Services/Services";
 import Customer from "./Customers/Customer";
 import vector1 from "../../assets/images/vector.png";
 import vector2 from "../../assets/images/vector2.png";
+import OurServices from "./OurServices/OurServices";
 
 function Home() {
   return (
@@ -17,11 +18,18 @@ function Home() {
 
       {/* ----------------our services--------------- */}
       {/* <Services></Services> */}
+
+      <div>
+          <OurServices></OurServices>
+        </div>
+
+       {/* about us section */}
       <div className="about-company">
         <div className="vector-grp">
           <img src={vector1} alt="" />
           <img src={vector2} alt="" />
         </div>
+       
         <div className="abt-com-flex">
           <div>
             <p>About Us</p>

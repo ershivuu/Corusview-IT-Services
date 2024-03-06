@@ -11,7 +11,11 @@ import phone from "../../assets/logos/phone-call.png";
 function Footers() {
   return (
     <>
-      <div className="footer-1">
+
+<div >
+
+
+      <div className="footer-1 set-footer">
         <div className="flex-footer">
           <div className="logo">
             <img src={ourlogo} alt="Corusview" />
@@ -44,10 +48,11 @@ function Footers() {
           </div>
         </div>
       </div>
-      <div className="footer-2">
+      <div className="footer-2 set-footer">
         <p>@Corusview 2023 All rights reserved </p>
         <p>Terms & Conditions Applied </p>
         <p>Privacy policy</p>
+      </div>
       </div>
     </>
   );
