@@ -1,5 +1,6 @@
 .contact-flex-box {
   margin-top: 100px;
+  margin-bottom: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,13 +102,51 @@
   border-radius: 16px;
   padding: 24px 64px 24px 64px;
 }
-.insta img {
-  width: 25px;
-  height: 25px;
+.vacancy-btns button {
+  background-color: transparent;
+  color: #83c5be;
+  border: 1px solid #83c5be;
+  padding: 16px;
+  border-radius: 8px;
+  margin: 10px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
 }
-/* .insta img:hover {
-  content: url(../../assets/logos/laptop.png);
-} */
+.bnt-clicked {
+  background-color: var(--sub-heading) !important;
+  color: #eeeeee !important ;
+}
+.vacancy-btns {
+  margin-bottom: 30px;
+}
+.social-btns img {
+  width: 40px;
+  height: 40px;
+
+  cursor: pointer;
+}
+.social-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+
+  margin-left: 50px;
+}
+
+.insta img:hover {
+  content: url(../../assets/logos/color-logo/insta-filled.png);
+}
+.linkedin img:hover {
+  content: url(../../assets/logos/color-logo/linkedinfilled.png);
+}
+.twitter img:hover {
+  content: url(../../assets/logos/color-logo/twitter-filled.png);
+}
+
+.hidden-select-options {
+  display: none;
+}
 @media screen and (max-width: 320px) {
   /* Styles for smaller smartphones */
 }

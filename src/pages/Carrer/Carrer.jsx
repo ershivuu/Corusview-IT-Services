@@ -34,6 +34,20 @@ function Carrer() {
           <img src={shivu} />
         </div>
       </div>
+      <div className="gallery-2">
+        <div className="imgs">
+          <img src={shivu} />
+        </div>
+        <div className="imgs img-to-btm">
+          <img src={shivu} />
+        </div>
+        <div className="imgs">
+          <img src={shivu} />
+        </div>
+        <div className="imgs img-to-btm">
+          <img src={shivu} />
+        </div>
+      </div>
       <div className="environment">
         <div className="env-heading">
           <p>What You See, What You Get</p>
