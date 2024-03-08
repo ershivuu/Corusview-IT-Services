@@ -55,7 +55,6 @@ function Home() {
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.
           </p>
-          <button> Our Projects</button>
         </div>
 
         <div className="recent-flex">

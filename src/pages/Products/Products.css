@@ -1,5 +1,95 @@
-.product-container {
-  margin-block: 10%;
+.productpage-heading {
   text-align: center;
   text-transform: uppercase;
+  font-family: "Playfair Display", serif;
+  font-size: 90px;
+  color: var(--heading-color);
+  max-width: 400px;
+  margin: auto;
+  line-height: 1;
+}
+.wrapped-content {
+  margin-block: 8%;
+  -webkit-animation: 0.5s slide-top ease-in-out;
+  animation: 0.5s slide-top ease-in-out;
+}
+.product-content {
+  text-align: center;
+  max-width: 1000px;
+  margin: auto;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+.prod-vector {
+  padding-top: 8%;
+  padding-bottom: 8%;
+  margin-block: 2%;
+  background: url("../../assets/images/productpage-vector.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.video-container {
+  max-width: 687px;
+  /* height: 352px; */
+  margin: auto;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.video-container video {
+  opacity: 1;
+  width: 100%;
+}
+.product-btns {
+  text-align: center;
+}
+.product-btns button {
+  margin: 10px;
+  background-color: transparent;
+  border: 2px solid var(--heading-color);
+  border-radius: 10px;
+  padding: 16px 50px 16px 50px;
+}
+.product-btns button:first-child {
+  background-color: var(--heading-color);
+}
+.product-btns button:first-child a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+.product-btns button:last-child a {
+  text-decoration: none;
+  color: var(--heading-color);
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+@media screen and (max-width: 320px) {
+  /* Styles for smaller smartphones */
+  .productpage-heading {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  /* Styles for larger smartphones */
+  .productpage-heading {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  /* Styles for tablets */
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Styles for small desktops and tablets in landscape */
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  /* Styles for larger desktops and laptops */
 }

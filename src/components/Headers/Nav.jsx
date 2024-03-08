@@ -10,7 +10,10 @@ function Nav() {
       <div>
         <div className="header-body">
           <div className="header-child">
-            <img className="header-logo" src={logo} />
+            <a href="/">
+              <img className="header-logo" src={logo} />
+            </a>
+
             <div>
               <div className="dropdown">
                 <button
@@ -39,7 +42,7 @@ function Nav() {
                   </li>
                   <li>
                     <Link to="/carrer" className="navigations">
-                      Carrer
+                      Career
                     </Link>
                   </li>
 

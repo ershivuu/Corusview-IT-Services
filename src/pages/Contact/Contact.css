@@ -1,5 +1,5 @@
 .contact-flex-box {
-  margin-top: 100px;
+  margin-top: 10%;
   margin-bottom: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10,6 +10,7 @@
   -ms-flex-pack: center;
   justify-content: center;
   gap: 30px;
+  margin-inline: 15px;
 }
 .contact-card {
   width: 700px;
@@ -25,6 +26,30 @@
   font-family: "Playfair Display", serif;
   color: #999999;
   line-height: 90px;
+  -webkit-animation: slide-right-new 0.8s ease-in-out;
+  animation: slide-right-new 0.8s ease-in-out;
+}
+@-webkit-keyframes slide-right-new {
+  0% {
+    -webkit-transform: translatex(-100%);
+    transform: translatex(-100%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+}
+@keyframes slide-right-new {
+  0% {
+    -webkit-transform: translatex(-100%);
+    transform: translatex(-100%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
 }
 .contact-card-1 div:first-child span {
   color: #375350;
@@ -159,6 +184,7 @@
   .contact-card-1 div:first-child {
     font-size: 40px;
     line-height: normal;
+    /* text-align: center; */
   }
 }
 

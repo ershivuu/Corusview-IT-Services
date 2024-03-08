@@ -93,11 +93,32 @@ function Contact() {
                 <button
                   type="button"
                   className={
+                    selectedButton === "Digital Marketing" ? "bnt-clicked" : ""
+                  }
+                  onClick={() => handleButtonClick("Digital Marketing")}
+                >
+                  Digital Marketing
+                </button>
+                <button
+                  type="button"
+                  className={
                     selectedButton === "Web Developement" ? "bnt-clicked" : ""
                   }
                   onClick={() => handleButtonClick("Web Developement")}
                 >
                   Web Developement
+                </button>
+
+                <button
+                  type="button"
+                  className={
+                    selectedButton === "Mobile Developement"
+                      ? "bnt-clicked"
+                      : ""
+                  }
+                  onClick={() => handleButtonClick("Mobile Developement")}
+                >
+                  Mobile Developement
                 </button>
                 <button
                   type="button"
@@ -109,26 +130,6 @@ function Contact() {
                   onClick={() => handleButtonClick("Software Developement")}
                 >
                   Software Developement
-                </button>
-                <button
-                  type="button"
-                  className={
-                    selectedButton === "Digital Marketing" ? "bnt-clicked" : ""
-                  }
-                  onClick={() => handleButtonClick("Digital Marketing")}
-                >
-                  Digital Marketing
-                </button>
-                <button
-                  type="button"
-                  className={
-                    selectedButton === "Mobile Developement"
-                      ? "bnt-clicked"
-                      : ""
-                  }
-                  onClick={() => handleButtonClick("Mobile Developement")}
-                >
-                  Mobile Developement
                 </button>
               </div>
               <select

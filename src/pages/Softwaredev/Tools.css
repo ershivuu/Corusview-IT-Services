@@ -37,16 +37,22 @@
   margin-block: 10px;
 }
 .mobile-box-1 {
-  padding-inline: 30px;
+  padding-inline: 10px;
   border: 1px solid white;
   border-radius: 15px;
 }
 .mobile-box-1 P:nth-child(1) {
   border: none;
+  font-weight: bold;
   font-size: 30px;
+  opacity: 0.5;
+  line-height: 1;
 }
 .tool-pc-view img {
   width: 100%;
+  -webkit-animation: pop linear;
+  animation: pop linear;
+  animation-timeline: view();
 }
 .tool-pc-view div {
   margin-top: 20px;

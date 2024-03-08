@@ -1,11 +1,16 @@
 import React from "react";
 import "./Customer.css";
-import client from "../../../assets/images/jazz.jpg"
+import client from "../../../assets/images/jazz.jpg";
 
 function Customer() {
   return (
     <>
       <div className="our-customers">
+      <div className="custom-heading custom-heading-mobile">
+          <p>
+            What our <br /> Customers <br /> are Saying
+          </p>
+        </div>
         <div className="custom-crousol">
           <div id="carouselExample" className="carousel slide">
             <div className="carousel-inner">

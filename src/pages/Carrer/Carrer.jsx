@@ -3,6 +3,14 @@ import "./Carrer.css";
 import shivu from "../../assets/images/shivam.jpg";
 import Nav from "../../components/Headers/Nav";
 import Footers from "../../components/Footers/Footers";
+import corusview1 from "../../assets/images/ourimages/corusview1.jpg";
+import corusview2 from "../../assets/images/ourimages/corusview2.jpeg";
+import corusview3 from "../../assets/images/ourimages/corusview3.jpg";
+import corusview4 from "../../assets/images/ourimages/corusview4.jpeg";
+import corusview5 from "../../assets/images/ourimages/corusview5.jpeg";
+import corusview6 from "../../assets/images/ourimages/corusview6.jpg";
+import corusview7 from "../../assets/images/ourimages/corusview12.jpg";
+import corusview8 from "../../assets/images/ourimages/corusview9.png";
 
 function Carrer() {
   return (
@@ -22,30 +30,30 @@ function Carrer() {
       </div>
       <div className="gallery">
         <div className="imgs">
-          <img src={shivu} />
+          <img src={corusview1} />
         </div>
         <div className="imgs img-to-btm">
-          <img src={shivu} />
+          <img src={corusview2} />
         </div>
         <div className="imgs">
-          <img src={shivu} />
+          <img src={corusview7} />
         </div>
         <div className="imgs img-to-btm">
-          <img src={shivu} />
+          <img src={corusview4} />
         </div>
       </div>
       <div className="gallery-2">
         <div className="imgs">
-          <img src={shivu} />
+          <img src={corusview5} />
         </div>
         <div className="imgs img-to-btm">
-          <img src={shivu} />
+          <img src={corusview6} />
         </div>
         <div className="imgs">
-          <img src={shivu} />
+          <img src={corusview3} />
         </div>
         <div className="imgs img-to-btm">
-          <img src={shivu} />
+          <img src={corusview8} />
         </div>
       </div>
       <div className="environment">

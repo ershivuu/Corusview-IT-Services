@@ -31,10 +31,11 @@
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 400;
+  max-width: fit-content;
 }
 .social-icons img {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 .social-icons {
   display: -webkit-box;
@@ -42,12 +43,9 @@
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 50px;
 }
-.social-icons img:nth-child(3) {
-  width: 45px;
-  height: 35px;
-}
+
 .footer-2 {
   padding-top: 15px;
   display: -webkit-box;
@@ -66,7 +64,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 10px;
+  gap: 20px;
 }
 .flex-info img {
   width: 25px;
@@ -80,12 +78,16 @@
   }
   .info {
     margin-top: 20px;
+    margin-left: 15%;
+  }
+  .logo {
+    text-align: center;
+  }
+  .social-icons {
+    gap: 30px;
+   margin-left: 20%;
   }
 }
-.set-footer{
-  text-align: center;
-}
-
 
 /* For medium devices (tablets, 992px and up) */
 @media only screen and (min-width: 768px) {

@@ -22,7 +22,6 @@
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-
 }
 
 .header-logo {
@@ -70,6 +69,9 @@ details div {
 }
 @media screen and (max-width: 320px) {
   /* Styles for smaller smartphones */
+  .header-child {
+    margin-inline: 10px;
+  }
 }
 
 @media screen and (min-width: 321px) and (max-width: 480px) {
@@ -82,6 +84,9 @@ details div {
     display: block;
     margin: 10px;
   }
+  .header-child {
+    margin-inline: 10px;
+  }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -89,6 +94,9 @@ details div {
   .dropdown-menu li {
     display: inline;
     margin: 20px;
+  }
+  .header-child {
+    margin-inline: 10px;
   }
 }
 
@@ -101,6 +109,9 @@ details div {
     display: inline;
     margin: 20px;
   }
+  .header-child {
+    margin-inline: 10px;
+  }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
@@ -111,4 +122,3 @@ details div {
     margin-left: -690% !important;
   }
 }
-

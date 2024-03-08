@@ -49,7 +49,7 @@ function Techno() {
           </div>
           <div className="dot"></div>
         </div>
-        <div>{componentToShow}</div>
+        <div style={{marginInline:'10px'}}>{componentToShow}</div>
       </div>
 
       <div className="services">

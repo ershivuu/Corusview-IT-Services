@@ -3,12 +3,20 @@
   font-weight: 700;
   font-family: "Playfair Display";
   color: #04020f;
+  -webkit-animation: grabspace linear;
+  animation: grabspace linear;
+  animation-timeline: view();
 }
-
+.accordion {
+  -webkit-animation: preserve linear;
+  animation: preserve linear;
+  animation-timeline: view();
+}
 .services-sections img {
   width: 60px;
 }
-.accordion-button p {
+.accordion-button p,
+.accordion-body {
   margin-left: 55%;
   font-size: 25px;
 }
@@ -18,11 +26,19 @@
 .accordion-item {
   background-color: white !important;
   border: none;
-}
-.accordion-button {
-  background-color: white !important;
   border-bottom: 1px solid black;
 }
+.accordion-item:focus,
+.accordion-button {
+  /* background-color: white !important; */
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.accordion-button {
+  background-color: white !important;
+}
+
 .accordion-button::after {
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -37,11 +53,25 @@
   -o-transition: var(--bs-accordion-btn-icon-transition);
   transition: var(--bs-accordion-btn-icon-transition);
 }
+
+.accordion-body button {
+  background-color: transparent;
+  border: 2px solid darkgray;
+  border-radius: 10px;
+}
+.accordion-body button a {
+  text-decoration: none;
+  color: darkgray;
+  padding: 5px 10px 5px 10px;
+}
 @media screen and (max-width: 320px) {
   /* Styles for smaller smartphones */
   .accordion-button p {
     margin-left: 8%;
     font-size: 18px;
+  }
+  .accordion-body {
+    margin-left: 0%;
   }
 }
 
@@ -51,16 +81,77 @@
     margin-left: 8%;
     font-size: 18px;
   }
+  .services-heading {
+    font-size: 30px;
+    text-align: center;
+    -webkit-animation: none;
+    animation: none;
+  }
+  .accordion-body {
+    margin-left: 0%;
+  }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
   /* Styles for tablets */
+  .accordion-body {
+    margin-left: 0%;
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   /* Styles for small desktops and tablets in landscape */
+  .accordion-body {
+    margin-left: 0%;
+  }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
   /* Styles for larger desktops and laptops */
+}
+@-webkit-keyframes grabspace {
+  0% {
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%);
+    opacity: 0.5;
+  }
+
+  60% {
+    -webkit-transform: translate(0%);
+    transform: translate(0%);
+    opacity: 1;
+  }
+}
+@keyframes grabspace {
+  0% {
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%);
+    opacity: 0.5;
+  }
+
+  60% {
+    -webkit-transform: translate(0%);
+    transform: translate(0%);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes preserve {
+  0% {
+    -webkit-transform: perspective(900px) rotateX(60deg) scale(0.7);
+    transform: perspective(900px) rotateX(60deg) scale(0.7);
+  }
+  40% {
+    -webkit-transform: rotate(0deg) scale(1) translateY(10px);
+    transform: rotate(0deg) scale(1) translateY(10px);
+  }
+}
+@keyframes preserve {
+  0% {
+    -webkit-transform: perspective(900px) rotateX(60deg) scale(0.7);
+    transform: perspective(900px) rotateX(60deg) scale(0.7);
+  }
+  40% {
+    -webkit-transform: rotate(0deg) scale(1) translateY(10px);
+    transform: rotate(0deg) scale(1) translateY(10px);
+  }
 }
