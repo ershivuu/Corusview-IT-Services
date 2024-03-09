@@ -4,12 +4,16 @@
   font-family: "Playfair Display";
   color: #04020f;
   -webkit-animation: grabspace linear;
-  animation: grabspace linear;
+  animation: grabspace linear forwards;
+  animation-range-start: entry;
+  animation-range-end: exit;
   animation-timeline: view();
 }
 .accordion {
   -webkit-animation: preserve linear;
-  animation: preserve linear;
+  animation: preserve linear forwards;
+  animation-range-start: entry;
+  animation-range-end: exit;
   animation-timeline: view();
 }
 .services-sections img {
@@ -18,10 +22,15 @@
 .accordion-button p,
 .accordion-body {
   margin-left: 55%;
-  font-size: 25px;
+  font-size: 20px;
 }
 .accordion-button img {
   width: 60px;
+}
+.accordion-button p {
+  font-size: 30px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
 }
 .accordion-item {
   background-color: white !important;

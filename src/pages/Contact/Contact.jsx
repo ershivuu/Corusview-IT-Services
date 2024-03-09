@@ -26,6 +26,7 @@ function Contact() {
     name: "",
     email: "",
     message: "",
+    
   });
   const handleInputChange = (event) => {
     const { name, value } = event.target;

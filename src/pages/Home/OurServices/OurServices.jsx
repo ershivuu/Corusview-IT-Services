@@ -1,5 +1,4 @@
 import React from "react";
-import { Outlet, Link } from "react-router-dom";
 import "./OurServices.css";
 import SD from "../../../assets/logos/software devlopment.png";
 import UIUX from "../../../assets/logos/ui ux.png";

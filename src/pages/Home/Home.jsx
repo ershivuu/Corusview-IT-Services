@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import "./Home.css";
-import Services from "../Services/Services";
 import Customer from "./Customers/Customer";
 import vector1 from "../../assets/images/vector.png";
 import vector2 from "../../assets/images/vector2.png";

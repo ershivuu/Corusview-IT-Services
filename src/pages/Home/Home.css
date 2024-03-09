@@ -18,8 +18,8 @@
   transition: 0.2s ease-in;
 }
 .home-heading span:hover {
-  color: white; /* Text color */
-  -webkit-text-stroke: 1.5px #5d8c87; /* Outline width and color */
+  color: white; 
+  -webkit-text-stroke: 1.5px #5d8c87;
 }
 .about-company {
   background: url("../../assets/images/abt-background.png");
