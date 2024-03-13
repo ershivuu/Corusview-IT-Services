@@ -5,6 +5,7 @@
   font-size: 90px;
   color: var(--heading-color);
   max-width: 400px;
+  font-weight: 700;
   margin: auto;
   line-height: 1;
 }
